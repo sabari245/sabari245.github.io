@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dotfiles — Sabari H</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'SF Mono', 'Cascadia Code', 'Fira Code', 'JetBrains Mono', monospace;
+            background: #0d1117;
+            color: #c9d1d9;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        .page {
+            max-width: 640px;
+            margin: 0 auto;
+            padding-top: 2rem;
+        }
+        nav {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+            font-size: 0.85rem;
+        }
+        nav a {
+            color: #484f58;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        nav a:hover, nav a.active {
+            color: #58a6ff;
+        }
+        h1 {
+            color: #58a6ff;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .subtitle {
+            color: #8b949e;
+            font-size: 0.9rem;
+            margin-bottom: 2.5rem;
+        }
+        .section { margin-bottom: 2rem; }
+        .label {
+            color: #8b949e;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.75rem;
+        }
+        .code-block {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 1rem 1.25rem;
+            font-size: 0.875rem;
+            color: #e6edf3;
+            position: relative;
+            cursor: pointer;
+            transition: border-color 0.2s;
+        }
+        .code-block:hover { border-color: #58a6ff; }
+        .code-block .copy-hint {
+            position: absolute;
+            top: 0.75rem;
+            right: 1rem;
+            color: #484f58;
+            font-size: 0.7rem;
+            transition: color 0.2s;
+        }
+        .code-block:hover .copy-hint { color: #58a6ff; }
+        .files { display: flex; flex-direction: column; gap: 0.5rem; }
+        .file-link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 0.75rem 1.25rem;
+            color: #c9d1d9;
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: border-color 0.2s;
+        }
+        .file-link:hover { border-color: #58a6ff; color: #58a6ff; }
+        .file-link .arrow { color: #484f58; transition: color 0.2s; }
+        .file-link:hover .arrow { color: #58a6ff; }
+        .copied { color: #3fb950 !important; }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <nav>
+            <a href="/">home</a>
+            <a href="/dotfiles.html" class="active">dotfiles</a>
+        </nav>
+
+        <h1>~/dotfiles</h1>
+        <p class="subtitle">zsh + tmux + neovim — portable config for debian &amp; arch</p>
+
+        <div class="section">
+            <div class="label">Install</div>
+            <div class="code-block" onclick="copyCommand(this)">
+                <span>curl -LsSf https://vorden.dev/install.sh | bash</span>
+                <span class="copy-hint">click to copy</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="label">Config files</div>
+            <div class="files">
+                <a href=".zshrc" class="file-link">
+                    <span>.zshrc</span>
+                    <span class="arrow">&rarr;</span>
+                </a>
+                <a href=".tmux.conf" class="file-link">
+                    <span>.tmux.conf</span>
+                    <span class="arrow">&rarr;</span>
+                </a>
+                <a href="init.lua" class="file-link">
+                    <span>init.lua</span>
+                    <span class="arrow">&rarr;</span>
+                </a>
+                <a href="install.sh" class="file-link">
+                    <span>install.sh</span>
+                    <span class="arrow">&rarr;</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function copyCommand(el) {
+            const text = el.querySelector('span').textContent;
+            navigator.clipboard.writeText(text);
+            const hint = el.querySelector('.copy-hint');
+            hint.textContent = 'copied!';
+            hint.classList.add('copied');
+            setTimeout(() => {
+                hint.textContent = 'click to copy';
+                hint.classList.remove('copied');
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
