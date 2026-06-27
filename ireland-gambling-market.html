@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ireland Gambling Market — Operators, Marketing & Trends</title>
+<style>
+  :root {
+    --bg: #0e1116;
+    --panel: #161b22;
+    --panel-2: #1c232d;
+    --border: #2a313c;
+    --text: #d6dbe1;
+    --text-dim: #9aa4b1;
+    --text-faint: #6b7480;
+    --accent: #6ea8fe;
+    --accent-soft: #2d3c57;
+    --warn: #e0a458;
+    --warn-soft: #3a2f1c;
+    --good: #6cc18a;
+    --max-width: 940px;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Georgia", "Iowan Old Style", "Palatino Linotype", serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 56px 28px 120px;
+  }
+
+  /* Typography */
+  h1, h2, h3, h4 {
+    font-family: "Helvetica Neue", "Inter", "Segoe UI", system-ui, sans-serif;
+    line-height: 1.25;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  h1 {
+    font-size: 2.15rem;
+    letter-spacing: -0.02em;
+    margin: 0 0 12px;
+  }
+
+  .subtitle {
+    font-family: "Helvetica Neue", "Inter", system-ui, sans-serif;
+    color: var(--text-dim);
+    font-size: 1.02rem;
+    margin: 0 0 8px;
+  }
+
+  .meta {
+    font-family: "Helvetica Neue", "Inter", system-ui, sans-serif;
+    color: var(--text-faint);
+    font-size: 0.82rem;
+    letter-spacing: 0.02em;
+    margin: 0 0 36px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin: 64px 0 6px;
+    padding-top: 18px;
+    border-top: 1px solid var(--border);
+  }
+
+  .section-eyebrow {
+    font-family: "Helvetica Neue", "Inter", system-ui, sans-serif;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--accent);
+    margin: 0 0 4px;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 1.16rem;
+    margin: 34px 0 8px;
+    color: #eef1f5;
+  }
+
+  h4 {
+    font-size: 1rem;
+    margin: 22px 0 6px;
+    color: #dfe4ea;
+    font-weight: 600;
+  }
+
+  p { margin: 0 0 14px; }
+
+  a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-soft);
+  }
+  a:hover { border-bottom-color: var(--accent); }
+
+  strong { color: #fff; font-weight: 600; }
+
+  ul, ol { margin: 0 0 16px; padding-left: 22px; }
+  li { margin-bottom: 8px; }
+
+  code {
+    font-family: "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+    background: var(--panel-2);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-size: 0.85em;
+    color: #e6d9b8;
+  }
+
+  /* Table of contents */
+  .toc {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px 26px;
+    margin: 0 0 24px;
+  }
+  .toc h2 {
+    margin: 0 0 10px;
+    border: none;
+    padding: 0;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--text-dim);
+  }
+  .toc ol {
+    columns: 2;
+    column-gap: 36px;
+    margin: 0;
+    padding-left: 18px;
+    font-family: "Helvetica Neue", "Inter", system-ui, sans-serif;
+    font-size: 0.92rem;
+  }
+  .toc li { margin-bottom: 6px; }
+
+  /* Panels / callouts */
+  .panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 18px 22px;
+    margin: 18px 0;
+  }
+
+  .callout {
+    border-left: 3px solid var(--accent);
+    background: var(--panel-2);
+    border-radius: 0 6px 6px 0;
+    padding: 14px 20px;
+    margin: 18px 0;
+    font-size: 0.97rem;
+  }
+  .callout.warn { border-left-color: var(--warn); background: var(--warn-soft); }
+  .callout .label {
+    font-family: "Helvetica Neue", "Inter", system-ui, sans-serif;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--text-dim);
+    display: block;
+    margin-bottom: 4px;
+  }
+  .callout.warn .label { color: var(--warn); }
+
+  /* Verdict inline tag */
+  .verdict {
+    font-family: "Helvetica Neue", "Inter", system-ui, sans-serif;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: var(--accent-soft);
+    color: #cfe0ff;
+    white-space: nowrap;
+  }
+
+  /* Tables */
+  .table-scroll { overflow-x: auto; margin: 18px 0; }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: "Helvetica Neue", "Inter", system-ui, sans-serif;
+    font-size: 0.88rem;
+    line-height: 1.45;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    vertical-align: top;
+  }
+  th {
+    background: var(--panel-2);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  td { color: var(--text); }
+  tr:nth-child(even) td { background: rgba(255,255,255,0.015); }
+
+  .data-num { color: var(--good); font-weight: 600; }
+
+  /* Source list */
+  .sources { font-family: "Helvetica Neue", "Inter", system-ui, sans-serif; font-size: 0.85rem; }
+  .sources li { margin-bottom: 10px; color: var(--text-dim); }
+  .sources a { word-break: break-word; }
+
+  .footnote {
+    font-family: "Helvetica Neue", "Inter", system-ui, sans-serif;
+    font-size: 0.82rem;
+    color: var(--text-faint);
+    margin-top: 4px;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 40px 0;
+  }
+
+  .help-banner {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--good);
+    border-radius: 0 6px 6px 0;
+    padding: 14px 20px;
+    margin: 40px 0 0;
+    font-size: 0.92rem;
+    color: var(--text-dim);
+  }
+
+  @media (max-width: 640px) {
+    body { font-size: 16px; }
+    .wrap { padding: 36px 18px 80px; }
+    h1 { font-size: 1.7rem; }
+    .toc ol { columns: 1; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <p class="section-eyebrow">Market reference · Republic of Ireland</p>
+  <h1>The Irish Gambling Market: Operators, Marketing Tactics &amp; Trends</h1>
+  <p class="subtitle">Who the major betting, gaming and lottery players are, how they acquire and market to customers, what works, and where the market is heading under new regulation.</p>
+  <p class="meta">Compiled June 2026 · Figures are estimates from the cited sources and shift over time · Not financial, legal or investment advice</p>
+
+  <nav class="toc">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#players">The major players</a></li>
+      <li><a href="#retail">Retail footprint</a></li>
+      <li><a href="#tactics">Marketing &amp; acquisition tactics</a></li>
+      <li><a href="#affiliate">How online acquisition actually works</a></li>
+      <li><a href="#categories">Category reach &amp; momentum</a></li>
+      <li><a href="#youth">Who younger people use</a></li>
+      <li><a href="#effectiveness">Marketing effectiveness ranking</a></li>
+      <li><a href="#regulation">The regulatory clampdown (GRAI)</a></li>
+      <li><a href="#harm">Harm context &amp; data caveats</a></li>
+      <li><a href="#sources">Sources</a></li>
+    </ol>
+  </nav>
+
+  <!-- ============================ -->
+  <section id="players">
+    <p class="section-eyebrow">01</p>
+    <h2>The major players</h2>
+    <p>The market is highly concentrated, anchored in horse racing and GAA culture. Ireland has one of the highest per-capita betting spends in the world, and the local bookmaker shop has historically been a genuine community institution.</p>
+
+    <h3>Paddy Power (Flutter Entertainment)</h3>
+    <p>The dominant brand and a cultural institution, founded in Dublin in 1988 through the merger of three smaller bookmakers. It is both the most-visited online gambling site in Ireland (~3.35M monthly visits as of early 2026) and the retail leader. Parent company <strong>Flutter</strong> also owns <strong>Betfair</strong> (the betting exchange), Sportsbet and FanDuel. Known globally for irreverent, stunt-driven marketing.</p>
+
+    <h3>BoyleSports</h3>
+    <p>The big home-grown independent — an Irish, family-owned company founded by John Boyle in 1982, headquartered in Dundalk. As of 2025 it runs <strong>over 380–390 retail branches</strong> across Ireland and the UK and employs ~2,700 people. Acquiring 33 William Hill shops in 2020 made it Ireland's biggest retail bookmaker by some counts. Strong on horse racing, GAA and football, with casino, poker and bingo products. The deepest Irish sponsorship portfolio of any operator.</p>
+
+    <h3>Ladbrokes (Entain)</h3>
+    <p>Long-established UK brand with a major Irish footprint (~143 outlets in earlier counts, third largest). Entain also runs <strong>Coral</strong>. One of the oldest gambling companies in the world (founded 1886).</p>
+
+    <h3>bet365</h3>
+    <p>Huge online presence with little to no retail — the second most-visited gambling site in Ireland (~2.59M monthly visits). Consistently ranked among the strongest online options for Irish punters for odds and market depth.</p>
+
+    <h3>Other strong online operators</h3>
+    <p>Stake (~2.41M monthly visits), William Hill (Evoke — largely exited Irish retail), Betfair (exchange, Flutter), Unibet (Kindred Group), 888sport / 888 Holdings, BetVictor (and its talkSPORT BET / Parimatch platforms), Betsson, LiveScore Bet, NetBet, DAZN Bet, Vavada, QuinnBet (Irish-rooted challenger).</p>
+
+    <h3>Irish institutions &amp; specialist operators</h3>
+    <ul>
+      <li><strong>The National Lottery</strong> — operated by Premier Lotteries Ireland (PLI). By far the largest gambling participation base in the country.</li>
+      <li><strong>Tote Ireland</strong> — wholly owned by Horse Racing Ireland, running the totalisator on the 26 racecourses in the Republic; profits reinvested into Irish horseracing.</li>
+      <li><strong>Regional retail chains</strong> — Bar One Racing, Bruce Betting, Harrington Bookmakers, Tully Bookmakers, Track Sports, Bambury Bookmakers (each 10+ branches).</li>
+    </ul>
+
+    <h3>Newer / emerging entrants</h3>
+    <p>Midnite (launched Ireland late 2024), Swifty Sports (Dublin-based Swifty Global), VivatBet, DragonBet, SBK, Matchbook (exchange), TonyBet, Interwetten, Puntit, Zoccer Sport.</p>
+  </section>
+
+  <!-- ============================ -->
+  <section id="retail">
+    <p class="section-eyebrow">02</p>
+    <h2>Retail footprint</h2>
+    <p>Physical betting is in long structural decline even as the biggest brands keep their dominance. Earlier market-share figures for licensed shops:</p>
+
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>Operator</th><th>Irish shops (approx.)</th><th>Share of outlets</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Paddy Power</td><td>~264</td><td>30%+ (largest)</td></tr>
+          <tr><td>BoyleSports</td><td>~219</td><td>second largest</td></tr>
+          <tr><td>Ladbrokes</td><td>~143</td><td>third largest</td></tr>
+          <tr><td colspan="3"><em>Combined, these three accounted for ~72% of all bookmaker shops in the country.</em></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>The trend is sharply downward: more than 500 betting shops (~37%) closed in the decade to ~2020, and the Irish Bookmakers Association has reported 721 shop closures overall. BoyleSports is the notable contrarian — it has continued opening shops (its 400th branch opened at Ballybrit, Galway) while rivals retrench. In October 2025 Paddy Power announced the closure of 28 shops in the Republic, one in Northern Ireland and 28 in Great Britain.</p>
+  </section>
+
+  <!-- ============================ -->
+  <section id="tactics">
+    <p class="section-eyebrow">03</p>
+    <h2>Marketing &amp; acquisition tactics</h2>
+
+    <h3>1. Shock / "mischief" PR stunts <span class="verdict">Paddy Power's signature</span></h3>
+    <p>Paddy Power built its entire brand on deliberately provocative, headline-grabbing stunts run by an internal "black ops" / "Mischief" team. Their own "Mischief Champion" described it as a cost-effective way to build brand awareness, increase affinity and differentiate from competitors. Famous examples: Nicklas Bendtner revealing Paddy Power lucky pants at Euro 2012; planes spelling out customers' tweets in smoke over the Ryder Cup; hijacking the 2013 Papal election with Dennis Rodman in a Popemobile; Stephen Hawking producing a World Cup prediction formula; the Roy Hodgson "Christ the Redeemer" statue on the cliffs of Dover; the "Save Our Shirt" Huddersfield Town fake-sponsorship reveal.</p>
+    <div class="callout">
+      <span class="label">Was it worth it?</span>
+      By their own metrics, enormously. In 2014 Paddy Power cut marketing costs to <strong>21% of online net revenue</strong> — below the ~27% average of major competitors — despite a big increase in TV spend, because of the value of earned (unpaid) media. Their World Cup activity that year brought in <strong>140,000 new online customers in four weeks</strong>, with total new-customer acquisition up 28% for the year. Internally, success was literally measured by the number of complaints received and the volume of earned media generated.
+    </div>
+    <div class="callout warn">
+      <span class="label">The downside</span>
+      Several stunts backfired. The 2014 Oscar Pistorius "money back if he's found not guilty" ad remains, by the agency's own account, the most-complained-about ad in British advertising history by a multiple of three, drawing a formal ASA investigation. A strategic wrinkle: because controversial ads were often run only once, an ASA ban on re-showing them had little practical effect — and the ban itself generated more free publicity.
+    </div>
+
+    <h3>2. Sport sponsorship <span class="verdict">used by everyone</span></h3>
+    <p>The single biggest shared channel, especially tying brands to Irish racing and GAA culture.</p>
+    <p><strong>BoyleSports</strong> has the deepest Irish portfolio: title sponsor of the <strong>Irish Grand National</strong> at Fairyhouse since 2014 (pledging €2m in prize money to extend it), the <strong>Irish Greyhound Derby</strong>, the BoyleSports Champion Chase at Punchestown, the World Grand Prix of Darts, and a Galway Races partnership timed to its 400th-shop opening. It also uses brand ambassadors like jockey Robbie Power and ex-footballer Kevin Kilbane. Strategic logic: the Irish Grand National attracts roughly three times the media and social coverage of any other Irish race — a concentrated way to reach the casual-betting public.</p>
+    <p><strong>English football</strong> is the other arena: BoyleSports has sponsored Newcastle, Wolves, Coventry, Birmingham City and, from 2025, a multi-year principal partnership with <strong>West Ham United</strong>. Paddy Power has run pitch-side and shirt deals widely.</p>
+    <div class="callout">
+      <span class="label">Was it worth it?</span>
+      Harder to measure than stunts, but clearly core — operators keep renewing multi-year racing deals (BoyleSports' Irish Grand National association now spans 13+ years), which signals positive ROI in brand recall and shop footfall. The big looming risk is regulatory (see section 08).
+    </div>
+
+    <h3>3. Free bets &amp; welcome bonuses <span class="verdict">universal hook</span></h3>
+    <p>Every operator uses "bet €10, get €30"-style sign-up offers. BoyleSports' standard offer is place a €10 bet, get €30 in free bets plus a €10 casino bonus (a €100 variant also runs). bet365, William Hill (code <code>BB40</code>), QuinnBet (Bet €10 Get €40), Coral and others run near-identical structures. Variants: money-back specials, acca insurance, odds boosts, "best odds guaranteed" on racing, and cashback.</p>
+    <div class="callout warn">
+      <span class="label">Forum / reviewer view</span>
+      Effective for acquisition but heavily criticised on value. Reviewers note the headline number often "loses its shine" once qualifying-bet rules, minimum odds and wagering requirements do the heavy lifting, and that free-bet credits are one-use with the stake not returned. A recurring complaint: promotions are dangled selectively — one customer reported only getting "free bet" offers when they bet more, with no apparent logic to how promos are offered.
+    </div>
+
+    <h3>4. Account limiting / "VIP" cultivation <span class="verdict">the hidden flip side</span></h3>
+    <p>Widely discussed on betting forums: operators court losing/recreational customers with bonuses while restricting or closing accounts of customers who win. As one Irish review puts it, punters can get stakes limited or accounts closed despite doing nothing wrong, other than getting noticed for a reason the bookie dislikes. The inverse — high-spending "VIP" schemes — was historically a major retention tool (now being banned, see section 08).</p>
+
+    <h3>5. Affiliate marketing, promo codes &amp; SEO <span class="verdict">the online engine</span></h3>
+    <p>A huge share of online acquisition runs through affiliate sites — the "best betting sites Ireland" pages (OLBG, Gambling.com, Bookies.com, Tribuna, Toffeeweb, irishracing.com, etc.). They rank in search, review operators, and embed tracked sign-up links and exclusive promo codes; the affiliate earns commission per referred customer. Operators also use email newsletters and friend-referral codes. Because it's paid only on conversions, the ROI is structurally favourable. (Details in section 04.)</p>
+
+    <h3>6. Product-led engagement &amp; retail integration <span class="verdict">retention</span></h3>
+    <ul>
+      <li><strong>Free-to-play games</strong> — e.g. Paddy Power's "Beat The Drop", where answering questions correctly offers a chance to win €5,000.</li>
+      <li><strong>Product innovations</strong> — the player "substitution guarantee" on bet builders (if your player is subbed off, the bet moves to their replacement; since copied by bet365); acca insurance and bet-builder insurance (Betfair's Acca Edge).</li>
+      <li><strong>Retail loyalty</strong> — BoyleSports' BOYLE Xtra card: tapping in-shop earns points and prize-draw entries (e.g. a Monaco Grand Prix trip).</li>
+      <li><strong>Localisation as strategy</strong> — deep GAA and Irish racing coverage is what home brands use to out-position international rivals.</li>
+    </ul>
+  </section>
+
+  <!-- ============================ -->
+  <section id="affiliate">
+    <p class="section-eyebrow">04</p>
+    <h2>How online acquisition actually works</h2>
+    <p>A common mental model is "creators push promo codes and users unknowingly enter them." The reality is slightly different and worth getting right:</p>
+    <ul>
+      <li><strong>Attribution is the link, not the code.</strong> When someone taps an affiliate link, a tracking ID / cookie is dropped, and the creator gets credited whether or not a visible promo code is ever typed. The promo code is usually just the <em>incentive</em> shown to the user ("use code X for €30 free bets") — the actual attribution happens silently via the link.</li>
+      <li><strong>Creators are often paid on a revenue share.</strong> Commission can be a share of the referred user's losses over time, not just a flat fee — meaning the creator can have a financial interest in the user losing money long-term. This is precisely why the practice is heavily scrutinised.</li>
+      <li><strong>TikTok specifics.</strong> Paid gambling ads are restricted on most platforms in most markets, so much of this runs through <em>organic</em> creator content rather than official ad placements — which makes it harder to regulate.</li>
+      <li><strong>The framing is "fun", not "profit".</strong> Operators lean on entertainment and excitement rather than earning, because over time the house edge means most users lose. The "make money" feeling is engineered to be strongest right at onboarding — the free bet is designed to create an early, low-risk win that builds the habit before real money is consistently at stake. The acquisition offer and the long-term economics point in opposite directions; that gap is the business model.</li>
+    </ul>
+    <div class="callout">
+      <span class="label">The full funnel</span>
+      Organic creator content + promo/affiliate links for online acquisition → sports sponsorship for mass awareness and intent capture → free bets to convert and habituate → in-play betting, bet builders, notifications and loyalty mechanics for retention.
+    </div>
+    <p>The intent-capture logic of sponsorship: someone watching a match is already emotionally invested in an outcome, so "put a fiver on it" is a short psychological step. The bet is sold as making the game more exciting, which is why in-play / live betting and bet builders are pushed hard — they convert passive viewing into repeated betting within a single match.</p>
+  </section>
+
+  <!-- ============================ -->
+  <section id="categories">
+    <p class="section-eyebrow">05</p>
+    <h2>Category reach &amp; momentum</h2>
+
+    <h4>Best reach right now</h4>
+    <p>By <strong>sheer participation</strong>, the <strong>National Lottery</strong> still has the widest reach — lotteries and scratch cards are the most broadly played, especially among older adults and women. By <strong>money and momentum</strong>, the picture flips toward online.</p>
+
+    <h4>Market size &amp; split</h4>
+    <ul>
+      <li>Total Irish gambling market projected at roughly <span class="data-num">€2.5 billion</span> in 2025, rising toward <span class="data-num">€2.8 billion</span> by 2029.</li>
+      <li>Segment split (one analysis): <strong>online casino games the largest slice (~€1.42bn)</strong>, sports betting ~15% of the landscape, lottery and gaming machines each ~10%.</li>
+      <li>Online revenue overall ~<span class="data-num">€1.17 billion</span>, roughly <strong>40% of the market</strong>.</li>
+      <li>Online user penetration ~<span class="data-num">14.4%</span> of the population gambled online in 2024.</li>
+    </ul>
+    <p class="footnote">Caveat: segment-size figures come from commercial market-research / operator-aligned sources and "casino" totals can be inflated by the same money churning repeatedly through slots. Treat the rank order as directional, not precise.</p>
+
+    <h4>Gaining traction</h4>
+    <p><strong>Online casino / iGaming is the clear growth story.</strong> Online casinos were already more popular than land-based ones, with about half of Irish adults having tried online gambling at least once. The sector is growing ~10% per year, led by mobile. Meanwhile retail betting is in structural decline (721 shop closures). Trajectory: betting shops shrinking, lottery flat-but-stable, online (especially casino) climbing fast.</p>
+  </section>
+
+  <!-- ============================ -->
+  <section id="youth">
+    <p class="section-eyebrow">06</p>
+    <h2>Who younger people use</h2>
+    <p>Younger users skew strongly toward <strong>online formats</strong>, and within that toward <strong>casino games and sports betting</strong> rather than lottery.</p>
+    <ul>
+      <li>Around <span class="data-num">30%</span> of 18–24 year-olds gamble, mostly favouring digital gameplay; the 35–64 group participates at over 55% and leans toward lotteries and bingo. Youth participation is <em>lower overall</em> but <em>more online-concentrated</em>.</li>
+      <li><strong>Men aged 15–34 are the most active online group</strong>, especially in online casino games; ~40% of online gamers are aged 25–34. The cited explanation: this millennial/Gen Z cohort grew up on smartphones and treats online casinos as normal entertainment.</li>
+      <li>A documented "gamblification" concern among the very young: one source reports <span class="data-num">22.9%</span> of 16-year-olds gambled for money in the past year, with boys making up ~80% of excessive-gambling cases in that age group.</li>
+      <li>ESRI research notes that for under-40s, exposure now comes mainly through online gambling and marketing rather than the home, and that childhood forms like sports betting, loot boxes and casino games are linked to higher problem-gambling risk.</li>
+    </ul>
+    <div class="callout">
+      <span class="label">Summary</span>
+      Lottery = older and broader. Sports betting = the cultural default, male-skewed. Online casino = where the young are concentrating and where growth is fastest.
+    </div>
+  </section>
+
+  <!-- ============================ -->
+  <section id="effectiveness">
+    <p class="section-eyebrow">07</p>
+    <h2>Marketing effectiveness ranking</h2>
+    <ol>
+      <li><strong>Sports betting operators — the proven large-scale marketers.</strong> Strongest, most measurable track record. Paddy Power's stunt-driven model delivered industry-beating efficiency (marketing ~21% of online net revenue vs ~27% for rivals; 140,000 new customers in a single World Cup window). Sponsorship gives year-round mass reach tied to the exact events people are watching when the betting urge hits.</li>
+      <li><strong>Online casino / iGaming — most effective at digital acquisition.</strong> Lives on SEO, affiliate marketing and creator content rather than big brand stunts. Highly efficient per-euro because it's performance-based (pay-per-conversion), and retention-heavy: ~25% of registered players receive daily notifications keeping gambling constantly visible. Less famous, arguably the most efficient at converting the young online audience.</li>
+      <li><strong>Lottery — broad but low-intensity.</strong> Enormous reach via retail presence and trusted-brand status, but markets gently (good-causes framing, jackpot rollovers) rather than aggressively. Effective at maintaining a mass base, not at aggressive acquisition or upsell.</li>
+    </ol>
+    <p>If "large-scale" means <strong>mass brand reach + measurable acquisition</strong>, sports betting wins on the historical evidence. If it means <strong>efficient digital conversion of the growth audience</strong>, online casino is ahead.</p>
+
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>Tactic</th><th>Heaviest users</th><th>Effectiveness verdict</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Shock PR stunts</td><td>Paddy Power</td><td>Very high ROI via earned media; reputational/regulatory risk</td></tr>
+          <tr><td>Racing &amp; GAA sponsorship</td><td>BoyleSports (esp.), Paddy Power, Ladbrokes</td><td>Strong brand recall; now regulation-exposed</td></tr>
+          <tr><td>Football club sponsorship</td><td>BoyleSports, Paddy Power</td><td>Reach-driven; harder to measure</td></tr>
+          <tr><td>Free bets / welcome bonuses</td><td>All</td><td>Effective acquisition; criticised on real value</td></tr>
+          <tr><td>Affiliate / SEO / promo codes</td><td>All online brands</td><td>High ROI (pay-per-conversion)</td></tr>
+          <tr><td>Loyalty / VIP &amp; account limiting</td><td>BoyleSports (BOYLE Xtra), all</td><td>Effective retention; VIP-style now being banned</td></tr>
+          <tr><td>Product engagement features</td><td>Paddy Power, Betfair, bet365</td><td>Good for stickiness</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============================ -->
+  <section id="regulation">
+    <p class="section-eyebrow">08</p>
+    <h2>The regulatory clampdown (GRAI)</h2>
+    <p>The crucial forward-looking caveat: the <strong>Gambling Regulation Act 2024</strong> (signed 23 October 2024) and the new regulator, the <strong>Gambling Regulatory Authority of Ireland (GRAI)</strong> — operational from March 2025 — are dismantling several of the tactics above. It replaces ~70-year-old legislation and is being implemented in phases.</p>
+
+    <h4>Key changes for marketing</h4>
+    <ul>
+      <li><strong>Broadcast watershed</strong> — gambling ads banned on TV/radio between 05:30 and 21:00. (Does not cover social media, electronic communications or incidental in-stadium branding shown during a broadcast.)</li>
+      <li><strong>Targeted inducements banned</strong> — the Act bans targeted inducements based on demographics or interests (e.g. VIP schemes aimed at sports fans), though broad public promotions remain permitted. This directly kills the individualised free-bet / VIP model.</li>
+      <li><strong>Children-focused marketing criminalised</strong> — an offence to make, sell or supply clothing or items aimed at children featuring a gambling brand (including free items), and to sponsor events where the majority of participants are children.</li>
+      <li><strong>National Gambling Exclusion Register</strong> — voluntary self-exclusion; operators must check it in real time.</li>
+      <li><strong>Payment restrictions</strong> — credit-card ban for gambling payments; ban on ATMs in gambling venues.</li>
+      <li><strong>Social Impact Fund</strong> — licensees must contribute annually to fund education, research and treatment.</li>
+    </ul>
+
+    <h4>Licensing &amp; penalties</h4>
+    <ul>
+      <li>Three licence types: B2C (operators), B2B (suppliers, including those providing odds/hosting), and charitable/philanthropic.</li>
+      <li>Licence fees start at €10,000, renewals up to ~€200,000 depending on turnover.</li>
+      <li>Remote operators can receive GRAI licences from <strong>1 July 2026</strong>; in-person/remote betting applications opened February 2026.</li>
+      <li>Penalties: administrative fines up to <strong>€20 million or 10% of turnover</strong> (whichever is greater), plus criminal sanctions including up to 8 years' imprisonment for serious breaches.</li>
+    </ul>
+
+    <div class="callout warn">
+      <span class="label">Industry pushback &amp; the forward read</span>
+      Horse-racing stakeholders warned the watershed could make broadcasting Irish racing unviable, though incidental in-stadium branding is exempted. Analysts caution that free bets and money-back offers can encourage higher activity especially among at-risk people, so the smart entrants will avoid turning every offer into "a trap with confetti." The expected next winners won't be the flashiest — strength will come from licensing, payments, support, dispute handling and genuine localisation, because those basics decide whether users return after the first week.
+    </div>
+
+    <h4>How the clampdown hits each channel unevenly</h4>
+    <ul>
+      <li>The TV/radio watershed and sponsorship limits mostly damage the <strong>sports-betting</strong> mass-marketing playbook.</li>
+      <li>The <strong>online casino</strong> affiliate / creator / notification model is harder to police, but new rules add the credit-card ban, self-exclusion register and the ban on targeted inducements.</li>
+    </ul>
+  </section>
+
+  <!-- ============================ -->
+  <section id="harm">
+    <p class="section-eyebrow">09</p>
+    <h2>Harm context &amp; data caveats</h2>
+    <p>The regulatory drive is grounded in harm research:</p>
+    <ul>
+      <li>ESRI research (2023) found <strong>1 in 30 Irish adults</strong> has a gambling problem — about ten times higher than a 2019 estimate, reframing problem gambling from a "small number who can't control themselves" to a population-level public-health issue.</li>
+      <li>An ESRI study (N=1,663) found almost <strong>two-in-three adults (64%)</strong> report gambling before age 18, associated with an 83–87% increase in later-life problem-gambling risk. Having a parent who gambled heavily roughly doubled the risk; combined childhood risk factors produced up to a four-fold increase.</li>
+      <li>The most common childhood forms were slot machines, scratch cards, horse/dog betting, gambling among friends, bingo and lotteries; sports betting, loot boxes and casino games were specifically linked to higher risk.</li>
+    </ul>
+    <div class="callout">
+      <span class="label">Source-reliability note</span>
+      Much "forum-level" sentiment (selective promotions, winners getting limited, bonuses cancelled after deposit) comes via review aggregators summarising Trustpilot and punter forums rather than raw threads. One aggregator fairly notes that most Trustpilot reviews skew negative — dissatisfied customers are far likelier to post — so a bookmaker rating above 2.5 is actually good and above 3.5 is exceptional. Treat complaint patterns as directionally real, not a clean satisfaction measure. The ESRI (independent, research-grade) data is the most trustworthy; commercial revenue-split numbers should be held more loosely.
+    </div>
+  </section>
+
+  <!-- ============================ -->
+  <section id="sources">
+    <p class="section-eyebrow">10</p>
+    <h2>Sources</h2>
+    <ul class="sources">
+      <li>Semrush — top gambling websites in Ireland (traffic): <a href="https://www.semrush.com/website/top/ireland/gambling/">semrush.com/website/top/ireland/gambling</a></li>
+      <li>Irish Examiner — betting shops per capita / market share: <a href="https://www.irishexaminer.com/news/arid-20456551.html">irishexaminer.com</a></li>
+      <li>Wikipedia — Paddy Power: <a href="https://en.wikipedia.org/wiki/Paddy_Power">en.wikipedia.org/wiki/Paddy_Power</a></li>
+      <li>Wikipedia — BoyleSports: <a href="https://en.wikipedia.org/wiki/BoyleSports">en.wikipedia.org/wiki/BoyleSports</a></li>
+      <li>Revenue.ie — register of bookmaking offices (PDF): <a href="https://www.revenue.ie/en/corporate/documents/statistics/excise/register-of-bookmaking-offices.pdf">revenue.ie</a></li>
+      <li>The Drum — Paddy Power's outrageous marketing stunts: <a href="https://www.thedrum.com/news/13-paddy-powers-most-outrageous-marketing-stunts">thedrum.com</a></li>
+      <li>Marketing Week — marketing spend efficiency / record profits: <a href="https://www.marketingweek.com/paddy-power-trumpets-efficiency-of-marketing-spend-as-it-reports-record-profits/">marketingweek.com</a></li>
+      <li>Econsultancy — "mischief, PR and press coverage": <a href="https://econsultancy.com/why-paddy-power-s-marketing-is-all-about-mischief-pr-and-press-coverage/">econsultancy.com</a></li>
+      <li>The Gambling Files — Ken Robertson marketing masterclass: <a href="https://www.thegamblingfiles.com/podcast/ken-robertsons-marketing-masterclass-how-paddy-power-won-everything-rtfm-161/">thegamblingfiles.com</a></li>
+      <li>Sport for Business — BoyleSports Irish Grand National sponsorship: <a href="https://sportforbusiness.com/boylesports-new-sponsors-of-irish-grand-national/">sportforbusiness.com</a></li>
+      <li>Leopardstown — BoyleSports / HRI racecourses partnership: <a href="https://www.leopardstown.com/news/details/boylesports-and-horse-racing-ireland-racecourses-a">leopardstown.com</a></li>
+      <li>BoyleSports — promotions / free bets: <a href="https://www.boylesports.com/promotions">boylesports.com/promotions</a></li>
+      <li>OLBG — free bets &amp; bookmaker reviews (Ireland): <a href="https://www.olbg.com/ie/free-bets">olbg.com/ie/free-bets</a></li>
+      <li>Irish Sport Horse Magazine — bookmaker reviews / account limiting: <a href="https://www.irishsporthorsemagazine.com/betting-sites/">irishsporthorsemagazine.com</a></li>
+      <li>irishracing.com — free bets &amp; betting offers: <a href="https://www.irishracing.com/betting/ie/free-bets-betting-offers">irishracing.com</a></li>
+      <li>Tribuna — best betting sites Ireland: <a href="https://tribuna.com/en/betting/betting-sites/ireland-bookmakers/">tribuna.com</a></li>
+      <li>Citizens Information — the law on gambling in Ireland: <a href="https://www.citizensinformation.ie/en/justice/civil-law/the-law-on-gambling-in-ireland/">citizensinformation.ie</a></li>
+      <li>McCann FitzGerald — legal view on the new regulations: <a href="https://www.mccannfitzgerald.com/knowledge/betting-and-gaming/the-legal-view-on-the-new-irish-gambling-regulations">mccannfitzgerald.com</a></li>
+      <li>Bird &amp; Bird — six things on the Gambling Regulation Act 2024: <a href="https://www.twobirds.com/en/insights/2024/ireland/six-things-you-should-know-about-the-new-irish-gambling-regulation-act-2024">twobirds.com</a></li>
+      <li>National Law Review — new gambling advertising rules: <a href="https://natlawreview.com/article/raising-stakes-new-gambling-advertising-rules-ireland">natlawreview.com</a></li>
+      <li>Woods Whur — transformation of gambling law in Ireland: <a href="https://www.woodswhur.co.uk/the-gambling-regulation-act-2024-a-significant-transformation-of-gambling-law-in-ireland/">woodswhur.co.uk</a></li>
+      <li>Irish Times — gambling ads and young people: <a href="https://www.irishtimes.com/ireland/2026/02/03/gambling-risks-facing-young-people-from-bookmaker-promos-during-games/">irishtimes.com</a></li>
+      <li>ESRI — childhood gambling experiences &amp; adult problem gambling: <a href="https://www.esri.ie/publications/childhood-exposure-to-gambling-increases-likelihood-of-problem-gambling-as-an-adult">esri.ie</a></li>
+      <li>Statista — online gambling Ireland market forecast: <a href="https://www.statista.com/outlook/amo/online-gambling/ireland">statista.com</a></li>
+      <li>Yogonet — new market entrants / growth phase: <a href="https://www.yogonet.com/international/news/2026/05/04/119417-new-market-entrants-signal-growth-phase-for-irelands-online-gaming-sector">yogonet.com</a></li>
+      <li>iGaming Today — Ireland iGaming market research / demographics: <a href="https://www.igamingtoday.com/ireland-igaming-market-research-report/">igamingtoday.com</a></li>
+      <li>Galway Daily — online casino trends &amp; youth participation: <a href="https://www.galwaydaily.com/gaming/whats-driving-the-popularity-of-online-casinos-in-ireland-a-look-at-local-trends/">galwaydaily.com</a></li>
+    </ul>
+  </section>
+
+  <div class="help-banner">
+    This document covers gambling and the deliberate design of customer-acquisition funnels, including youth uptake. If any of this is closer to home than market research, free and confidential support is available in Ireland via <a href="https://www.gamblingcare.ie/">GamblingCare.ie</a>.
+  </div>
+
+</div>
+</body>
+</html>
